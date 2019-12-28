@@ -242,6 +242,11 @@ box-shadow:
    nav ul li{
        padding: 10px;
    }
+   
+footer{
+    position: static;
+}
+
 }
 
 @media all and (max-width: 640px){
