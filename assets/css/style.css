@@ -1,0 +1,281 @@
+body{
+  background-image: url(../images/bg.png);
+  background-repeat: repeat;
+  background-size: 400px 400px;
+    width:100%;
+  height:100%;
+  font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color:#777777;
+}
+header{
+    border-bottom: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+header:after{
+    clear: both;
+}
+.inside-div{
+    max-width:960px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.logo{
+    background-color:#4aaaa5 ;
+    padding: 0px 35px;
+    float:left;
+    text-decoration: none;
+}
+.logo h1{
+    color:#ffffff;
+}
+/********* menu *********/
+nav{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:last-child{
+    padding-right: 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    transition: all ease 0.8s;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color:#4aaaa5;
+    text-decoration: underline;
+}
+ nav ul li a:active{
+     color: #4aaaa5;
+ }
+/********** main ***************/
+h1{
+    color:#4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+main{
+    margin: 0 auto;
+    margin-top:25px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    max-width:960px;
+}
+/***** index *************/
+#content + div:after{
+    display: block;
+    content:"";
+    clear: both;
+}
+
+#content div p:first-child{
+    margin-top: 0px;
+}
+
+img{
+    float: left;
+    width:200px;
+    height: 150px;
+    margin: 0 20px 20px 0;
+}
+
+.inside-main{
+    padding:0px 20px;
+}
+hr{
+    margin: 0px;
+}
+
+
+main h1, #content{
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+div#content{
+    padding: 20px 0px;
+}
+/*********** contact **************/
+
+input, label{
+    display: block;
+}
+
+label{
+    margin-bottom: 3px;
+}
+
+input:not([type=submit]), textarea{
+    width: 98%;
+}
+input, textarea{
+    padding:8px;
+    border-radius: 3px;
+    border:1px solid #ccc
+}
+textarea{
+    height: 200px;
+}
+
+.input-group{
+  margin-bottom: 10px;
+}
+
+input[type=submit]{
+    padding: 8px 25px;
+    margin-top: 10px;
+    color:#fff;
+    background-color: #4aaaa5;
+    border:none;
+    transition: all ease 0.8s;
+    font-size: 1em;
+}
+
+input[type=submit]:hover{
+    background-color: #ffffff;
+    color:#4aaaa5;
+    border: 1px solid #4aaaa5;
+    cursor: pointer;
+}
+/********* Portfolio ******/
+
+.box{
+    display: inline-block;
+    width:200px;
+    height: 150px;
+    position: relative;
+    margin: 0px 20px 30px 20px;
+    transition: all ease-in 0.8s;
+}
+
+.box img{
+    width:100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+.box h3{
+    position: absolute;
+    bottom: 6px;
+    width:100%;
+    padding: 15px 0px;
+    text-align:center;
+    background-color: #4aaaa5;
+    color:#fff;
+    margin: 0px;
+}
+
+.box:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0 , 0 , 0.5);
+}
+
+
+/********* footer ************/
+footer{
+    width:100%;
+    background-color: #666666;
+    border-top: 3px solid #4aaaa5;
+    color:#ffffff;
+    padding: 20px 0px;
+    text-align: center;
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+}
+
+.responsive-nav{
+    position: relative;
+    padding-left: 1.25em;
+    display: none;
+}
+
+.responsive-nav:before{
+ content: "";
+position: absolute;
+left: 0;
+top: 0.25em;
+width: 1em;
+height: 0.15em;
+background: black;
+box-shadow: 
+  0 0.25em 0 0 black,
+  0 0.5em 0 0 black;
+}
+
+.close-nav{
+    display: none;
+}
+
+/**************Media Queries **************/
+
+@media all and (max-width: 980px){
+    .responsive-nav:before{
+        display: none;
+    }
+
+    nav ul{
+        padding: 0px 20px;
+    }
+
+}
+
+@media all and (max-width: 768px){
+
+    nav ul{
+        padding: 0px 10px;
+    }
+
+   nav ul li{
+       padding: 10px;
+   }
+}
+
+@media all and (max-width: 640px){
+
+    .responsive-nav{
+        display: block;
+    }
+    nav ul{
+        background-color: #ccc;
+        padding: 0px 20px;
+        margin:0px;
+        border-radius: 5px;
+    }
+    nav ul li{
+        display: block;
+        padding:5px 0px;
+        text-align: center;
+    }
+    .logo{
+        padding: 0px 5px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .inside-div{
+        height: 44px;
+    }
+
+    .box{
+        margin: 0px 10px 20px 10px;
+        
+    }
+}
+
+
