@@ -223,9 +223,6 @@ box-shadow:
 /**************Media Queries **************/
 
 @media all and (max-width: 980px){
-    .responsive-nav:before{
-        display: none;
-    }
 
     nav ul{
         padding: 0px 20px;
@@ -250,31 +247,32 @@ footer{
 }
 
 @media all and (max-width: 640px){
-
-    .responsive-nav{
-        display: block;
-    }
-    nav ul{
-        background-color: #ccc;
-        padding: 0px 20px;
-        margin:0px;
-        border-radius: 5px;
-    }
-    nav ul li{
-        display: block;
-        padding:5px 0px;
-        text-align: center;
+    .logo, nav{
+        width:100%;
+        padding: 0px;
     }
     .logo{
-        padding: 0px 5px;
+        display: block;
+    }
+    .inside-div{
+        height: auto;
+    }
+    .inside-div:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    img{
+        width:100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        float: none;
     }
 
     h1{
         font-size: 18px;
-    }
-
-    .inside-div{
-        height: 44px;
     }
 
     .box{
